@@ -5,7 +5,6 @@ export const Auth = () => {
     const [Email, SetEmail] = useState("");
     const [Password, setPassword] = useState("");
 
-
     // console.log(auth.currentUser);
     const SignIn = async () => {
         try {
@@ -16,7 +15,6 @@ export const Auth = () => {
             console.error(error)
         }
     };
-
 
     const SignInWithGoogle = async () => {
         try {
@@ -29,8 +27,6 @@ export const Auth = () => {
         }
     };
 
-
-
     const LogOut = async () => {
         try {
 
@@ -41,10 +37,6 @@ export const Auth = () => {
             console.error(error)
         }
     };
-
-
-
-
 
     return (
         <div>
