@@ -28,6 +28,7 @@ function App() {
 				Date: newReleaseDate,
 				userId: auth?.currentUser?.uid,
 			});
+
 		} catch (error) {
 			console.log(error);
 		}

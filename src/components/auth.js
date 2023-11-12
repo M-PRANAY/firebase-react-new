@@ -8,9 +8,7 @@ export const Auth = () => {
     // console.log(auth.currentUser);
     const SignIn = async () => {
         try {
-
             await createUserWithEmailAndPassword(auth, Email, Password)
-
         } catch (error) {
             console.error(error)
         }
@@ -18,10 +16,8 @@ export const Auth = () => {
 
     const SignInWithGoogle = async () => {
         try {
-
             console.log(auth.currentUser);
             await signInWithPopup(auth, googleprovider)
-
         } catch (error) {
             console.error(error)
         }
